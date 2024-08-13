@@ -1,0 +1,26 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\rithy\Documents\MEGA\CHIPTREE\intern\sen0564_demo\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/main/main.c:4:
+C:/Espressif/frameworks/esp-idf-v5.3/components/driver/deprecated/driver\adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/main/main.c: In function 'app_main':
+C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/main/main.c:43:15: warning: unused variable 'voltage_vo' [-Wunused-variable]
+   43 |         float voltage_vo = (adc_value_vo / 4095.0) * 3.3;
+      |               ^~~~~~~~~~
+C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/main/main.c:42:15: warning: unused variable 'voltage_vs' [-Wunused-variable]
+   42 |         float voltage_vs = (adc_value_vs / 4095.0) * 3.3;
+      |               ^~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable sen0564_demo.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/build/sen0564_demo.bin
+[7/7] cmd.exe /C "cd /D C:\Users\rithy\Documents\MEGA\CHIPTREE\intern\sen0564_demo\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/build/partition_table/partition-table.bin C:/Users/rithy/Documents/MEGA/CHIPTREE/intern/sen0564_demo/build/sen0564_demo.bin"
+sen0564_demo.bin binary size 0x2cbf0 bytes. Smallest app partition is 0x100000 bytes. 0xd3410 bytes (83%) free.

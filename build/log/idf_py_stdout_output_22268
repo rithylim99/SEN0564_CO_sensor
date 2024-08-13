@@ -1,0 +1,100 @@
+e��j%�(40) boot.esp32: SPI Spets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 13 2024 11:30:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09ae0h ( 39648) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019b08 vaddr=3ffb0000 size=0230ch (  8972) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001be1c vaddr=40080000 size=041fch ( 16892) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15628h ( 87592) map[0m
+[0;32mI (163) esp_image: segment 4: paddr=00035650 vaddr=400841fc size=08824h ( 34852) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     sen0564_demo[0m
+[0;32mI (211) app_init: App version:      1[0m
+[0;32mI (216) app_init: Compile time:     Aug 13 2024 11:29:47[0m
+[0;32mI (222) app_init: ELF file SHA256:  136fb4bfe...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2BE0 len 0002D420 (181 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CA20 len 000135E0 (77 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (307) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+PPM Value of CO = 4598.341797 ppm 
+PPM Value of CO = 5079.576172 ppm 
+PPM Value of CO = 5115.816895 ppm 
+PPM Value of CO = 5067.552246 ppm 
+PPM Value of CO = 5103.707031 ppm 
+PPM Value of CO = 5226.098145 ppm 
+PPM Value of CO = 5651.207520 ppm 
+PPM Value of CO = 4554.958984 ppm 
+PPM Value of CO = 4074.855225 ppm 
+PPM Value of CO = 4832.972656 ppm 
+PPM Value of CO = 4620.186523 ppm 
+PPM Value of CO = 4664.190430 ppm 
+PPM Value of CO = 4719.786133 ppm 
+PPM Value of CO = 4697.467773 ppm 
+PPM Value of CO = 4753.459961 ppm 
+PPM Value of CO = 4996.008789 ppm 
+PPM Value of CO = 5732.133301 ppm 
+PPM Value of CO = 4937.159668 ppm 
+PPM Value of CO = 5226.098145 ppm 
+PPM Value of CO = 5213.729980 ppm 
+PPM Value of CO = 6607.974609 ppm 
+PPM Value of CO = 2054.349365 ppm 
+PPM Value of CO = 4972.384277 ppm 
+PPM Value of CO = 5300.942383 ppm 
+PPM Value of CO = 4984.182617 ppm 
+PPM Value of CO = 4984.182617 ppm 
+PPM Value of CO = 4902.184082 ppm 
+PPM Value of CO = 5019.742676 ppm 
+PPM Value of CO = 5091.625977 ppm 
+PPM Value of CO = 4984.182617 ppm 
+PPM Value of CO = 5067.552246 ppm 
+PPM Value of CO = 4972.384277 ppm 
+PPM Value of CO = 5079.576172 ppm 
+PPM Value of CO = 4902.184082 ppm 
+PPM Value of CO = 4972.384277 ppm 
+PPM Value of CO = 4354.413086 ppm 
+PPM Value of CO = 4017.326660 ppm 
+PPM Value of CO = 3411.320312 ppm 
+PPM Value of CO = 3602.416260 ppm 
+PPM Value of CO = 4375.099121 ppm 
+PPM Value of CO = 4282.775391 ppm 
+PPM Value of CO = 4730.982422 ppm 
+PPM Value of CO = 4753.459961 ppm 
